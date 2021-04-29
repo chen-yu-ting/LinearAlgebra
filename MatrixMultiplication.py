@@ -24,19 +24,18 @@ def InputMatrix(_row, _col):
   return matrix
       
 #輸入矩陣維度
-matrixDimension = []
 print("===輸入第一個矩陣維度===")
-matrixDimension.append(list(map(int, input().split())))
+matrixDimension_1 = list(map(int, input().split()))
 print("===輸入第二個矩陣維度===")
-matrixDimension.append(list(map(int, input().split())))
+matrixDimension_2 = list(map(int, input().split()))
 
 #判斷矩陣是否能夠相乘
-if (matrixDimension[0][1] == matrixDimension[1][0]):
+if (matrixDimension_1[1] == matrixDimension_2[0]):
   #輸入矩陣
   print("=====輸入第一個矩陣=====")
-  matrix_1 = InputMatrix(matrixDimension[0][0], matrixDimension[0][1])
+  matrix_1 = InputMatrix(matrixDimension_1[0], matrixDimension_1[1])
   print("=====輸入第二個矩陣=====")
-  matrix_2 = InputMatrix(matrixDimension[1][0], matrixDimension[1][1])
+  matrix_2 = InputMatrix(matrixDimension_2[0], matrixDimension_2[1])
 
   #矩陣相乘
   print("======矩陣相乘結果======")
@@ -46,7 +45,7 @@ if (matrixDimension[0][1] == matrixDimension[1][0]):
 else:
   print("矩陣維度有誤,兩矩陣無法相乘!")
 
-  
+
 '''      Test data
     ===輸入第一個矩陣維度===
     3 2
