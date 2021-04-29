@@ -1,2 +1,2 @@
-# LinearAlgebraProgram
+# LinearAlgebra
 
