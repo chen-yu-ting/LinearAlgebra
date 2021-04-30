@@ -40,13 +40,14 @@ if (matrixDimension_1[1] == matrixDimension_2[0]):
   #矩陣相乘
   print("======矩陣相乘結果======")
   matrixMultiplicationResult = MatrixMultiplication(matrix_1, matrix_2)
-  print(matrixMultiplicationResult)
+  for r in range (len(matrixMultiplicationResult)):
+    print(matrixMultiplicationResult[r])
   
 else:
   print("矩陣維度有誤,兩矩陣無法相乘!")
 
 
-'''      Test data
+'''       Test data
     ===輸入第一個矩陣維度===
     3 2
     ===輸入第二個矩陣維度===
@@ -59,5 +60,7 @@ else:
     1 0
     2 3
     ======矩陣相乘結果======
-    [[18, 15], [46, 39], [4, 3]]
+    [18, 15]
+    [46, 39]
+    [4, 3]
 '''
